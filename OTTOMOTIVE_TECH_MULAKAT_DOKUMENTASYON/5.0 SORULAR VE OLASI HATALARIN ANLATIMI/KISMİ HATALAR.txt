@@ -1,0 +1,5 @@
+1)	UART üzerinden gönderilen dataların son byte'ı (CheckSum byte'ı) örnekte verilene göre yanlış hesaplanmıştır. Hesaplama şeklim aşağıda gösterilmiştir.
+
+	CheckSummByte = 0xFF - (SummByte%0xFF);
+
+2)	Üzerinde çok fazla çalışılamadığı için ufak hatalar meydana gelebilir. Ancak basit anlamda can haberleşmesi başarılı bir şekilde yapılıp, uart üzerinden bilgisayara başarılı şekilde gönderilmiştir.
